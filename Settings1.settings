@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PhylogeneticTree" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="Algorithm" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Needleman-Wunsch</Value>
+    </Setting>
+    <Setting Name="Open_Gap" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-4</Value>
+    </Setting>
+    <Setting Name="Extend_Gap" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="Presence_Percentage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="Threshold_Size" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0.002</Value>
+    </Setting>
+    <Setting Name="Ignore_Gaps" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CoVariance" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Euclidean" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Pearson" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Priority" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AboveNormal</Value>
+    </Setting>
+    <Setting Name="NumberOfSequences" Type="System.String" Scope="User">
+      <Value Profile="(Default)">105</Value>
+    </Setting>
+    <Setting Name="NotificationEnabled1" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="NotificationEnabled2" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IDLength" Type="System.String" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="ShowAdditionalInfo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ImageType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">JPEG</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

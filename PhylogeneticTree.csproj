@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2895F2D4-3B03-468F-BA1C-70010CD5D456}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhylogeneticTree</RootNamespace>
+    <AssemblyName>PhylogeneticTree</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bio, Version=1.1.4482.26498, Culture=neutral, PublicKeyToken=13335e9abfbf69d0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Bio.dll</HintPath>
+    </Reference>
+    <Reference Include="Bio.IO, Version=1.1.4482.26538, Culture=neutral, PublicKeyToken=13335e9abfbf69d0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\.NET Bio\1.1\Tools\Bin\Bio.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Bio.Pamsam, Version=1.1.4482.26509, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\.NET Bio\1.1\Tools\Bin\Bio.Pamsam.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PdfSharp">
+      <HintPath>..\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckUpdate.Designer.cs">
+      <DependentUpon>CheckUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cluster.cs" />
+    <Compile Include="dnaSequence.cs" />
+    <Compile Include="DrawTree.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormComment.Designer.cs">
+      <DependentUpon>FormComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSaved.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSaved.Designer.cs">
+      <DependentUpon>FormSaved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemp.Designer.cs">
+      <DependentUpon>frmTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MouseClickMessageFilter.cs" />
+    <Compile Include="pairwisedDNAAnalyse.cs" />
+    <Compile Include="PleaseWait.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings1.cs" />
+    <Compile Include="Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <Compile Include="WMI_Processor_Information.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckUpdate.resx">
+      <DependentUpon>CheckUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComment.resx">
+      <DependentUpon>FormComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSaved.resx">
+      <DependentUpon>FormSaved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemp.resx">
+      <DependentUpon>frmTemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\pairwisedDNA.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OxyPlot.dll" />
+    <Content Include="Resources\1356551413_help_black.png" />
+    <Content Include="Resources\1356551545_help.png" />
+    <Content Include="Resources\1356551761_information_32.png" />
+    <Content Include="Resources\1356551857_monotone_cog_settings_gear.png" />
+    <Content Include="Resources\1356554450_cancel.png" />
+    <Content Include="Resources\1356554890_MAIL.png" />
+    <Content Include="Resources\1356558950_099317-google-g-logo.png" />
+    <Content Include="Resources\1356558953_099304-facebook-logo.png" />
+    <Content Include="Resources\1356558957_418.png" />
+    <Content Include="Resources\1356560285_43232.ico" />
+    <Content Include="Resources\1356709595_toggle_log.png" />
+    <Content Include="Resources\1407922050_HP-Documents-Folder-Dock-512.png" />
+    <Content Include="Resources\1407922072_Folder.png" />
+    <Content Include="Resources\1407922079_HP-HDD-Dock-512.png" />
+    <Content Include="Resources\1407922084_FolderDocuments.png" />
+    <Content Include="Resources\1407922094_HP-Control-Dock-512.png" />
+    <Content Include="Resources\1407922204_24_Stop.png" />
+    <Content Include="Resources\1407922207_50_Browser.png" />
+    <Content Include="Resources\1407922210_54_Settings.png" />
+    <Content Include="Resources\1407922217_18_Close.png" />
+    <Content Include="Resources\1407922223_23_Play.png" />
+    <Content Include="Resources\1407922230_17_Question.png" />
+    <Content Include="Resources\1407922237_34_Envelope.png" />
+    <Content Include="Resources\1407923871_EjectHot.png" />
+    <Content Include="Resources\1407923880_Stop1NormalBlue.png" />
+    <Content Include="Resources\1407923882_Play1Hot.png" />
+    <Content Include="Resources\1407924174_flat_icons-graficheria.it-03.png" />
+    <Content Include="Resources\1407924177_save.png" />
+    <Content Include="Resources\1407924179_Save.png" />
+    <Content Include="Resources\1407924185_floppy.png" />
+    <Content Include="Resources\1407926645_70388.ico" />
+    <Content Include="Resources\1407926666_Streamline-75.png" />
+    <Content Include="Resources\1407926670_internt_web_technology-02.png" />
+    <Content Include="Resources\1407926678_Streamline-76.png" />
+    <Content Include="Resources\1407926679_98.png" />
+    <Content Include="Resources\1407926710_advancedsettings.png" />
+    <Content Include="Resources\1407926826_Settings.png" />
+    <Content Include="Resources\1407926954_system-help.png" />
+    <Content Include="Resources\1407926957_help.png" />
+    <Content Include="Resources\1407926962_Help_Circle_Blue.png" />
+    <Content Include="Resources\1407926968_Help.png" />
+    <Content Include="Resources\1407927030_Help.png" />
+    <Content Include="Resources\1407927035_gnome-help.png" />
+    <Content Include="Resources\1407927049_Help_Circle_Blue.png" />
+    <Content Include="Resources\1407927215_file.png" />
+    <Content Include="Resources\1407927222_file_add.png" />
+    <Content Include="Resources\1407927232_open-file.png" />
+    <Content Include="Resources\1408265793_wordpress_blog_standalone_journal.png" />
+    <Content Include="Resources\64px-Times_New_Roman_Greek_small_letter_sigma.svg.png" />
+    <None Include="Resources\aks-3x4.jpg" />
+    <None Include="Resources\ali abadi.jpg" />
+    <Content Include="Resources\doc_edit.ico" />
+    <None Include="Resources\mirshamsi.jpg" />
+    <Content Include="Resources\Win8Fast.gif" />
+    <None Include="Resources\add.png" />
+    <Content Include="Resources\automatic_updates %281%29.png" />
+    <Content Include="Resources\automatic_updates.png" />
+    <Content Include="Resources\available-updates-32.ico" />
+    <Content Include="Resources\available_updates.png" />
+    <Content Include="Resources\busy.gif" />
+    <None Include="Resources\category2.png" />
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\config2.png" />
+    <Content Include="Resources\iconB.ico" />
+    <None Include="Resources\Very-Basic-About-icon.png" />
+    <None Include="Resources\Logos-Internet-Explorer-icon.png" />
+    <None Include="Resources\ie-icon.png" />
+    <Content Include="Resources\info.png" />
+    <Content Include="Resources\info_black.png" />
+    <None Include="Resources\me11.jpg" />
+    <None Include="Resources\me111.jpg" />
+    <None Include="Resources\save1.png" />
+    <None Include="Resources\process1.png" />
+    <None Include="Resources\log2.png" />
+    <None Include="Resources\print1.png" />
+    <None Include="Resources\ok.gif" />
+    <None Include="Resources\refresh3.png" />
+    <Content Include="Resources\Settings-32.png" />
+    <None Include="Resources\Systems-Ie-icon.png" />
+    <Content Include="Resources\transfer.gif" />
+    <None Include="Resources\transfer1.gif" />
+    <Content Include="Resources\TreeViewBackGround.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
